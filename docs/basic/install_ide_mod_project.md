@@ -68,7 +68,7 @@ In the `.csproj` file, there are four important properties:
     version.
   - `Description` should be a description of your mod.
   - `Authors` should be the name of the author of the mod.
-  - ![Example mod csproj prop](/img/example_csproj_properties.png)
+![Example mod csproj prop](/img/example_csproj_properties.png)
 
 
 ## Troubleshooting

@@ -43,11 +43,11 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs',
+              to: 'docs/',
             },
             {
               label: 'Advanced Docs',
-              to: 'docs/advanced',
+              to: 'docs/advanced/',
             },
           ],
         },
@@ -73,13 +73,17 @@ module.exports = {
           items: [
             {
               label: 'About',
-              to: 'about',
+              to: 'docs/',
             },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} NuclearPowered`,
     },
+    colorMode: {
+      defaultMode: 'dark'
+    },
+    image: 'img/logo.png'
   },
   presets: [
     [
