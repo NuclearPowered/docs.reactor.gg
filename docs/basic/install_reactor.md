@@ -17,6 +17,12 @@ Reactor framework.
 - Move it into the `BepInEx/plugins` folder. This folder is the one where we previously
   extracted BepInEx to, the Among Us directory.
 
+:::important
+If you get a 404 page when trying to download Reactor from
+[NuclearPowered/Reactor/actions](https://github.com/NuclearPowered/Reactor/actions),
+log into your GitHub account. For some arcane reason, GitHub requires you to be 
+logged in to be able to see workflow runs, even if they are public.
+:::
 
 ## Test the current BepInEx modloader install
 

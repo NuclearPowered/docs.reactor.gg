@@ -60,4 +60,4 @@ programming experience is heavily recommended.
 
 ## Ready to start?
 
-### [Let's go ➔](basic/install_bepinex)
+### [Let's go ➔](/docs/basic/install_bepinex)

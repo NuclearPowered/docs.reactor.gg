@@ -41,7 +41,7 @@ your Among Us Folder. Here is a sample of how your Among Us Directory should loo
 ├── Among Us.exe
 ├── BepInEx
 │   ├── core/
-│   └── unhollowed/
+│   └── unity-libs/
 ├── changelog.txt
 ├── doorstop_config.ini
 ├── GameAssembly.dll
@@ -105,7 +105,8 @@ Below is a example directory structure after launching BepInEx for the first tim
 │   ├── core/
 │   ├── patchers/
 │   ├── plugins/
-│   └── unhollowed/
+│   ├── unhollowed/
+│   └── unity-libs/
 ├── changelog.txt
 ├── doorstop_config.ini
 ├── GameAssembly.dll
