@@ -26,14 +26,41 @@ git clone https://github.com/NuclearPowered/Example.git
 Alternatively use a Git GUI to clone the project. Do **NOT** download the repository as
 a zip.
 
+
+## Setup Among Us environment variable
+
+Before opening the project in your IDE or text editor, create an environment variable 
+that points to your modded Among Us Directory. This is the folder in which BepInEx was 
+installed earlier.
+
+On Windows:
+- Search `system environment variables` from the search button in the taskbar. Click the
+  result in the image below.
+  ![win_envvar_step1](/img/winenvvar1.png)
+- The window that will open is shown below. Click the advanced tab at the top, and click the
+  `Environment Variables...` button.
+  ![win_envvar_step2](/img/winenvvar2.png)
+- The `Environment Variables...` button should open the window pictured below. Click the `New` 
+  button under system, and name the variable `AmongUs`, and the path to be the path to your 
+  Among Us installation.
+  ![win_envvar_step3](/img/winenvvar3.png)
+- After you click save, it should look like this.
+  ![win_envvar_step3](/img/winenvvar4.png)
+
+On Linux, there are many options. Here are two different ways:
+1.  Open the file `/etc/environment` and add `AmongUs=/path/to/among/us` to the file.
+2.  Create a new file under `/etc/profile.d/`, and name it `amongus-oxygenfilter.sh`. Add the
+    following snippet to this file.
+    ```
+    AmongUs=/path/to/among/us
+    ```
+   
+
 ## Initial configuration of the project
 
-Now, we need to open up the project, with some preliminary configuration.
+Now, Open the project in your IDE or text editor. Do not worry if your IDE shows a lot of
+errors. They will disappear at the end of this section. There are a few steps to follow:
 
-- Create an environment variable that points to your modded Among Us Directory. This is the
-  folder in which BepInEx was installed earlier.
-- Open the project in your IDE or text editor. Do not worry if your IDE shows a lot of
-  errors. They will disappear at the end of this section.
 - Open the `.csproj` file.
   - In Rider, right click on the project and go under `Edit > Edit .csproj`. Note that the
     image below is a sample image, and some information, particularly the name of the
@@ -63,7 +90,7 @@ In the `.csproj` file, there are four important properties:
     mappings for. If you are modding on the steam version, it will be `2020.12.9s`, as is
     already defined.
   - `Mappings` defines what version of the mappings itself that Reactor will use. If there
-    is an incremental update to the mappings (which may correct some deobfuscation and add
+    is an update to the mappings (which may correct some deobfuscation and add
     more deobfuscated names), this property should be updated in order to download the new
     version.
   - `Description` should be a description of your mod.
