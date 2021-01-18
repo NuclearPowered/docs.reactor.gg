@@ -4,7 +4,8 @@ module.exports = {
     ['Quick Start']: [
       'basic/install_bepinex',
       'basic/install_reactor',
-      'basic/install_ide_mod_project',
+      'basic/install_netsdk_example_template',
+      'basic/install_configure_ide',
       'basic/compile_example_mod',
       'basic/launch_more_resources'
     ],

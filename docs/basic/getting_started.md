@@ -54,9 +54,10 @@ programming experience is heavily recommended.
 ## Overall Goals
 1. Install BepInEx.
 2. Install the Reactor mod.
-3. Install an C# IDE and download the example mod project
-4. Compile the project and obtain the mod file.
-5. Launch Among Us with the new mod!
+3. Install an the .NET SDK and the example mod template.
+4. Download and configure a C# IDE to work with the template.
+5. Compile the project and obtain the mod file.
+6. Launch Among Us with the new mod!
 
 ## Ready to start?
 
