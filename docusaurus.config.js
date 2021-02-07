@@ -22,12 +22,12 @@ module.exports = {
           label: 'Getting Started',
           position: 'left',
         },
-        {
-          to: 'docs/advanced',
-          activeBasePath: 'docs/advanced',
-          label: 'Advanced Docs',
-          position: 'left'
-        },
+        // {
+        //   to: 'docs/advanced',
+        //   activeBasePath: 'docs/advanced',
+        //   label: 'Advanced Docs',
+        //   position: 'left'
+        // },
         {
           href: 'https://github.com/NuclearPowered',
           label: 'GitHub',
@@ -45,10 +45,10 @@ module.exports = {
               label: 'Getting Started',
               to: 'docs/',
             },
-            {
-              label: 'Advanced Docs',
-              to: 'docs/advanced/',
-            },
+            // {
+            //   label: 'Advanced Docs',
+            //   to: 'docs/advanced/',
+            // },
           ],
         },
         {

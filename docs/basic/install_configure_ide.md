@@ -42,14 +42,15 @@ passed as the name to `dotnet new reactor -n` when you created the project.
 :::
 
 ### Inside the project file
-In the `.csproj` file, there are four important properties:
+In the `.csproj` file, there are few important properties:
+  - `GamePlatform` defines game platform (`Steam`, `Itch`), defaults to `Steam`
   - `GameVersion` defines which version of the game that the Reactor framework will download
     mappings for. If you are modding on the steam version, it will be the `2020.12.9s` (the latest
-    version at the time of writing).
+    version at the time of writing), by default template assumes your mod is multi platform and sets it depending on `GamePlatform`.
   - `Mappings` defines what version of the mappings itself that Reactor will use. If there
     is an update to the mappings (which may correct some deobfuscation and add
     more deobfuscated names), this property should be updated in order to download the new
-    version. At the time of writing `NuclearPowered/Mappings:0.1.0-alpha.2` is the latest.
+    version. At the time of writing `NuclearPowered/Mappings:0.1.2` is the latest.
   - `Description` should be a description of your mod.
   - `Authors` should be the name of the author of the mod.
 ```xml
@@ -57,25 +58,30 @@ In the `.csproj` file, there are four important properties:
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Version>1.0.0</Version>
-        <GameVersion>2020.12.9s</GameVersion>
-        <Mappings>NuclearPowered/Mappings:0.1.0-alpha.2</Mappings>
+        <Mappings>NuclearPowered/Mappings:0.1.2</Mappings>
 
         <Description>Mod template for Reactor</Description>
         <Authors>js6pak</Authors>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(GamePlatform)' == 'Steam'">
+        <GameVersion>2020.12.9s</GameVersion>
+        <DefineConstants>$(DefineConstants);STEAM</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(GamePlatform)' == 'Itch'">
+        <GameVersion>2020.11.17i</GameVersion>
+        <DefineConstants>$(DefineConstants);ITCH</DefineConstants>
+    </PropertyGroup>
+
     <ItemGroup>
         <Deobfuscate Include="$(AmongUs)\BepInEx\plugins\Reactor-$(GameVersion).dll" />
 
-        <PackageReference Include="Reactor.OxygenFilter.MSBuild" Version="0.2.3" />
+        <PackageReference Include="Reactor.OxygenFilter.MSBuild" Version="0.2.5" />
     </ItemGroup>
 
     <Target Name="Copy" AfterTargets="Reobfuscate">
-        <Copy 
-          SourceFiles="$(OutputPath)reobfuscated/$(AssemblyName)-$(GameVersion).dll" 
-          DestinationFolder="$(AmongUs)/BepInEx/plugins/"
-          Condition="'$(Configuration)' == 'Debug'"
-        />
+        <Copy SourceFiles="$(OutputPath)reobfuscated/$(AssemblyName)-$(GameVersion).dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" Condition="'$(Configuration)' == 'Debug'" />
     </Target>
 </Project>
 ```
