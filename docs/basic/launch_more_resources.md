@@ -23,6 +23,6 @@ wine configuration overrides, as explained in
 
 Explore the Among Us modding resources, covering everything from Harmony patching,
 to useful classes in Among Us. At the very least, you should look at the 
-[BepInEx guide](bepinex_guide) and the [Harmony guide](bepinex_guide), to obtain a
+[BepInEx guide](bepinex_guide) and the [Harmony guide](harmony_guide), to obtain a
 basic understanding of how they work. You can also learn about Reactor framework's internals,
 in the [Advanced Docs](/docs/advanced).
