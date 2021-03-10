@@ -55,7 +55,7 @@ namespace ExampleMod
 }
 ```
 
-## Debugging
+## Debugging (WINDOWS ONLY)
 Before testing your mod, I highly recommend for you to turn on bepinex's console for Among Us.  
 Head on to the path: `C:\Program Files (x86)\Steam\steamapps\common\Among Us\BepInEx\config`  
 Click `BepInEx.cfg` and find the header `[Logging.Console]` and change `Enabled = false` to `Enabled = true`
@@ -65,8 +65,8 @@ If you want to run 4 instances of Among Us without clicking the exe file 8 times
 `C:\Program Files (x86)\Steam\steamapps\common\Among Us`  
 Download the .bat file: https://cdn.discordapp.com/attachments/790517195003527189/816540451062153226/AUTester.bat
 
-## Reactor.Debugger
+## Reactor.Debugger 
 If you wish to start the game with 3 clients, you can use the `Reactor.Debugger.dll`  
-Click this link: https://github.com/NuclearPowered/Reactor/suites/2107184644/artifacts/42856716
+Click this link: https://nightly.link/NuclearPowered/Reactor/workflows/main/master/Reactor.Debugger.dll
 
 **Make sure the Impostor count is set to 1**
