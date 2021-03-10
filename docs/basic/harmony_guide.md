@@ -55,12 +55,13 @@ namespace ExampleMod
 }
 ```
 
-## Debugging (WINDOWS ONLY)
+## Debugging
 Before testing your mod, I highly recommend for you to turn on bepinex's console for Among Us.  
 Head on to the path: `C:\Program Files (x86)\Steam\steamapps\common\Among Us\BepInEx\config`  
+If you're not on Windows, you can find the BepInEx's Config Directory  
 Click `BepInEx.cfg` and find the header `[Logging.Console]` and change `Enabled = false` to `Enabled = true`
 
-## Running 4 instances with just 2 clicks
+## Running 4 instances with just 2 clicks (WINDOWS ONLY)
 If you want to run 4 instances of Among Us without clicking the exe file 8 times, you can download this .bat file and place it inside:  
 `C:\Program Files (x86)\Steam\steamapps\common\Among Us`  
 Download the .bat file: https://cdn.discordapp.com/attachments/790517195003527189/816540451062153226/AUTester.bat
