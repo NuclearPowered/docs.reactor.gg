@@ -10,18 +10,23 @@ Reactor framework.
 ## How to Install
 
 - Download Reactor from CI at
-[NuclearPowered/Reactor/actions](https://github.com/NuclearPowered/Reactor/actions).
-- Click into the latest build (it will be the first workflow run).
-- At the bottom of that page, there are the `Reactor.dll` and `Reactor.Debugger.dll`
-  artifacts. Download the `Reactor.dll` mod for now.
-- Move it into the `BepInEx/plugins` folder. This folder is the one where we previously
-  extracted BepInEx to, the Among Us directory.
+[nightly.link/NuclearPowered/Reactor/workflows](https://nightly.link/NuclearPowered/Reactor/workflows/main/master).
+You should see a page like this below.
+![nightly_link_reactor_artifact.png](/img/nightly_link_reactor_artifact.png)
+
+- Click the link ending in `Reactor.dll.zip` to download the artifact.
+- Open the zip and extract the `.dll` file inside to your `BepInEx/plugins` folder.
+  This folder is the one where we previously extracted BepInEx to, the Among Us directory.
 
 :::important
-If you get a 404 page when trying to download Reactor from
-[NuclearPowered/Reactor/actions](https://github.com/NuclearPowered/Reactor/actions),
-log into your GitHub account. For some arcane reason, GitHub requires you to be 
-logged in to be able to see workflow runs, even if they are public.
+If you get a 404 page or are otherwise unable to download the Reactor mod from the
+[nightly.link/NuclearPowered/Reactor/actions](https://nightly.link/NuclearPowered/Reactor/workflows/main/master),
+you can download it straight from GitHub. Remember to **sign in** to your GitHub account,
+then go to this link: 
+[NuclearPowered/Reactor/actions](https://github.com/NuclearPowered/Reactor/actions).
+Click into the latest workflow run, and then download the Reactor.dll artifact.
+Remember, for some arcane reason, GitHub requires you to be 
+logged in to be able to see workflow runs, even if the CI is public.
 :::
 
 ## Test the current BepInEx modloader install
