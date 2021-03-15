@@ -57,7 +57,7 @@ command prompt, and try the command again. If it still doesn't work, try reinsta
 .NET, and ask in our community [Discord Server](https://discord.gg/Zcmsb9UGuq).
 
 
-## Download the Example mod template
+## Download the example mod template
 
 Now, the `Reactor.Template` example mod template needs to be installed on your computer. Then, the
 `dotnet` cli can scaffold the project.
@@ -67,24 +67,26 @@ Run the following command to install the latest template:
 dotnet new --install Reactor.Template
 ```
 
-Now, `Reactor.Template`, the example mod template, is installed. Make a new folder for your
-new project. The example mod will be generated in this folder. Open a command prompt in
-this folder, and run the following command. You can replace `{{NameOfYourPlugin}}` with a name
-of your choosing (excluding the curly braces).
+After running this command with no errors, `Reactor.Template`, the example mod template, will be installed.
+
+## Scaffold and generate the example mod template.
+We need to create a new folder to store an example mod project. Open a new command prompt
+in the folder you just created. Then, type the following command to generate the plugin.
+You can replace `NameOfYourPlugin` with a name of your choosing, like `ModExperiment`.
 
 ```shell
-dotnet new reactor -n {{NameOfYourPlugin}}
+dotnet new reactor -n NameOfYourPlugin}
 ```
 
 After running this command, there will be a new directory created with the example mod. Here
-is the directory structure after creating a project with the name `ExamplePlugin`.
+is the directory structure after creating a project with the name `ModExperiment`.
 ```
 .
-└── ExamplePlugin
-    ├── ExamplePlugin
-    │   ├── ExamplePlugin.csproj
+└── ModExperiment
+    ├── ModExperiment
+    │   ├── ModExperiment.csproj
     │   └── TemplatePlugin.cs
-    └── ExamplePlugin.sln
+    └── ModExperiment.sln
 ```
 
 ## Setup Among Us environment variable
