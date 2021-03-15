@@ -11,7 +11,11 @@ module.exports = {
     ],
     ['BepInEx and Harmony']: [
       'basic/bepinex_guide',
-      'basic/harmony_guide'
+      'basic/harmony_guide',
+      'basic/debugging'
+    ],
+    ['Among Us Cookbook']: [
+      'basic/among_us/main_classes'
     ]
   },
   advanced: {

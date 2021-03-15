@@ -1,8 +1,8 @@
 ---
-title: Debugging your mod
+title: Debugging
 ---
 
-## Intro to Debugging
+## Intro to debugging your mod
 Before launching your mod, we highly recommend for you to turn on bepinex's console for Among Us.
 Head on to the path to your Among Us install. From there, go into `BepInEx/config`.
 You should see the file `BepInEx.cfg`. Open up the `BepInEx.cfg` file and find the header 
