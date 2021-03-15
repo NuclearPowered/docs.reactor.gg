@@ -30,8 +30,12 @@ In particular, we call which class we want to detect, for instance, we will use 
 After that, we would like to define what method we want to detect in that class. In this scenario, we will 
 use the `FixedUpdate` method which runs every frame in the game.
 
-In order for us to patch this class and method, we can use the following line:  
-`[HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.FixedUpdate))]`  
+In order for us to patch this class and method, we can use the following line:
+```java
+// The type in the typeof() is the class being patched.
+// The method in the nameof() is the method of the class that is being patched
+[HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.FixedUpdate))]
+```
 *Make sure that this is above your class*
 
 After that, we can create a Postfix method since it is not necessary to use a Prefix  
