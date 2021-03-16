@@ -6,7 +6,7 @@ title: BepInEx Guide
 ## Best Practices
 
 Here is an example BasePlugin class. Note how it does not (ab)use static variables everywhere, and calls `Harmony.PatchAll()` after it has been created with a user defined `Id = gg.reactor.Example`.
-```java
+```csharp
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.IL2CPP;

@@ -15,7 +15,8 @@ module.exports = {
       'basic/debugging'
     ],
     ['Among Us Cookbook']: [
-      'basic/among_us/main_classes'
+      'basic/among_us/main_classes',
+      'basic/among_us/cooldown_button'
     ]
   },
   advanced: {
