@@ -75,7 +75,7 @@ in the folder you just created. Then, type the following command to generate the
 You can replace `NameOfYourPlugin` with a name of your choosing, like `ModExperiment`.
 
 ```shell
-dotnet new reactor -n NameOfYourPlugin}
+dotnet new reactor -n NameOfYourPlugin
 ```
 
 After running this command, there will be a new directory created with the example mod. Here
