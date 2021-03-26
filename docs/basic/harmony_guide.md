@@ -34,7 +34,7 @@ of the class you are patching).
 An example patch is below. 
 In particular, we call which class we want to detect, for instance, we will use the `PlayerControl` class.  
 After that, we would like to define what method we want to detect in that class. In this scenario, we will 
-use the `FixedUpdate` method which runs every frame in the game.
+use the `FixedUpdate` method which runs every time the engine updates physics.
 
 In order for us to patch this class and method, we can use the following line:
 ```csharp
