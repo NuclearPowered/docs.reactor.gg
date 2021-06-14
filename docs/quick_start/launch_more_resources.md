@@ -10,7 +10,7 @@ Launching the mod is the last step in the [Overall Goals](/#overall-goals).
 The example mod should already be in `BepInEx/plugins`. Launch the game and join freeplay.
 Your name should be changed to `:>`!
 
-If there are any issues, you can ask for help on our [Discord Server](https://discord.gg/Zcmsb9UGuq).
+If there are any issues, you can ask for help on our [Discord Server](https://reactor.gg/discord).
 
 :::tip
 If you are on Linux, and you don't see the name, remember to add `winhttp` to the
@@ -23,4 +23,4 @@ wine configuration overrides, as explained in
 
 Explore the Among Us modding resources, covering everything from Harmony patching,
 to useful classes in Among Us. At the very least, you should look at the 
-[BepInEx guide](bepinex_guide), the [Harmony guide](harmony_guide), and the [Debugging Help](debugging).
+[BepInEx guide](/bepinex_and_harmony/bepinex_guide), the [Harmony guide](/bepinex_and_harmony/harmony_guide), and the [Debugging Help](/bepinex_and_harmony/debugging).

@@ -51,4 +51,4 @@ programming experience is heavily recommended.
 
 ## Ready to start?
 
-### [Let's go ➔](/quick-start/install_bepinex)
+### [Let's go ➔](/quick_start/install_bepinex)
