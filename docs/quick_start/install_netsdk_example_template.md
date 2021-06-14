@@ -4,15 +4,13 @@ title: Install .NET SDK and Example template
 
 
 Installing the .NET SDK and the example mod template is the third step in the
-[Overall Goals](/docs#overall-goals).
+[Overall Goals](/#overall-goals).
 
 
 ## Install .NET SDK
 
-Microsoft distributes the .NET core SDK. You can find the download page
-[here](https://dotnet.microsoft.com/download/dotnet/5.0).
-If you are on Windows, just download the installer. On Linux, use your package manager, 
-or the `install-dotnet` script.
+Microsoft distributes the .NET SDK. You can find the download page [here](https://dotnet.microsoft.com/download/dotnet/5.0).
+If you are on Windows, just download the installer. On Linux, use your package manager (duh).
 
 ![dotnet download](/img/dotnetdownload.png)
 
@@ -54,7 +52,7 @@ To install additional .NET runtimes or SDKs:
 ```
 If it doesn't, make sure the `dotnet` executable is in your path, restart your 
 command prompt, and try the command again. If it still doesn't work, try reinstalling
-.NET, and ask in our community [Discord Server](https://discord.gg/Zcmsb9UGuq).
+.NET, and ask in our community [Discord Server](https://reactor.gg/discord).
 
 
 ## Download the example mod template

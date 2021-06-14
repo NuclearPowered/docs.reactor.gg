@@ -3,15 +3,14 @@ title: Install BepInEx
 ---
 
 
-Installing BepInEx is first step in the [Overall Goals](/docs#overall-goals).
+Installing BepInEx is first step in the [Overall Goals](/#overall-goals).
 
 
 ## How to download
 
 BepInEx is distributed as a zip file which contains the necessary bootstrapping code to
 mod the game. There are two ways to get the latest build.
-  - Manual downloading from the NuclearPowered GitHub. The latest release will be posted on
-    [NuclearPowered/BepInEx/releases](https://github.com/NuclearPowered/BepInEx/releases).
+  - Download manually from [NuclearPowered/BepInEx/releases](https://github.com/NuclearPowered/BepInEx/releases).
   - You can also install it through the Dropship launcher, which will automatically install and
     upgrade to the latest version of BepInEx.
     - The latest Dropship release can be
@@ -42,7 +41,6 @@ your Among Us Folder. Here is a sample of how your Among Us Directory should loo
 ├── BepInEx
 │   ├── core/
 │   └── unity-libs/
-├── changelog.txt
 ├── doorstop_config.ini
 ├── GameAssembly.dll
 ├── mono
@@ -107,7 +105,6 @@ Below is a example directory structure after launching BepInEx for the first tim
 │   ├── plugins/
 │   ├── unhollowed/
 │   └── unity-libs/
-├── changelog.txt
 ├── doorstop_config.ini
 ├── GameAssembly.dll
 ├── mono

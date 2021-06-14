@@ -1,29 +1,20 @@
 module.exports = {
-  basic: {
-    Introduction: ['basic/getting_started'],
+  docs: {
+    ['Introduction']: [
+      'introduction/getting_started'
+    ],
     ['Quick Start']: [
-      'basic/install_bepinex',
-      'basic/install_reactor',
-      'basic/install_netsdk_example_template',
-      'basic/install_configure_ide',
-      'basic/compile_example_mod',
-      'basic/launch_more_resources'
+      'quick_start/install_bepinex',
+      'quick_start/install_reactor',
+      'quick_start/install_netsdk_example_template',
+      'quick_start/install_configure_ide',
+      'quick_start/compile_example_mod',
+      'quick_start/launch_more_resources'
     ],
     ['BepInEx and Harmony']: [
-      'basic/bepinex_guide',
-      'basic/harmony_guide',
-      'basic/debugging'
-    ],
-    ['Among Us Cookbook']: [
-      'basic/among_us/main_classes',
-      'basic/among_us/cooldown_button'
+      'bepinex_and_harmony/bepinex_guide',
+      'bepinex_and_harmony/harmony_guide',
+      'bepinex_and_harmony/debugging'
     ]
-  },
-  advanced: {
-    ['Reactor\'s Architecture']: ['advanced/index'],
-    ['Reactor Client Mod']: ['advanced/explaining_reactor_mod'],
-    ['Reactor.Greenhouse']: ['advanced/explaining_greenhouse'],
-    ['Reactor.OxygenFilter']: ['advanced/explaining_oxygenfilter', 'advanced/explaining_mappings'],
-    ['Reactor.OxygenFilter.MSBuild']: ['advanced/explaining_oxygenfilter_msbuild']
   }
 };

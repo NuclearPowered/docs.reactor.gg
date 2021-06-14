@@ -1,3 +1,0 @@
----
-title: Reactor.Greenhouse Internals
----

@@ -4,7 +4,7 @@ title: Compile the Example mod
 
 
 Compiling the Example mod is the fourth step in the
-[Overall Goals](/docs#overall-goals).
+[Overall Goals](/#overall-goals).
 
 
 ## Compiling

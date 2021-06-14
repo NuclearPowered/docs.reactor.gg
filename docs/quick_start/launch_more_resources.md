@@ -3,7 +3,7 @@ title: Launching the mod and More Resources
 ---
 
 
-Launching the mod is the last step in the [Overall Goals](/docs#overall-goals).
+Launching the mod is the last step in the [Overall Goals](/#overall-goals).
 
 
 ## Launching
@@ -24,4 +24,3 @@ wine configuration overrides, as explained in
 Explore the Among Us modding resources, covering everything from Harmony patching,
 to useful classes in Among Us. At the very least, you should look at the 
 [BepInEx guide](bepinex_guide), the [Harmony guide](harmony_guide), and the [Debugging Help](debugging).
-The Reactor framework's internals itself are described in the [Advanced Docs](/docs/advanced).

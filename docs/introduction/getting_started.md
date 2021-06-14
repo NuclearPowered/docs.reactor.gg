@@ -18,13 +18,9 @@ installed and playing it.
 ## Prerequisite Information
 
 1. Loading external mods requires **BepInEx**, also known as Bepis Injector Extensible.
-2. BepInEx provides an environment for mods to patch Among Us functions,
-   to change how they run, as well as call Among Us and Unity methods.
-3. A quirk of Among Us is that it is compiled using **il2cpp**, and obfuscated using
-   **beebyte**. These programs that converts code that can be easily decompiled
-   and patchable into obfuscated code.
-4. Luckily, the Reactor Framework automatically deobfuscates Among Us,
-   to make it easily moddable again.
+2. BepInEx provides an environment for mods to patch Among Us functions, to change how they run, as well as call Among Us and Unity methods.
+3. A quirk of Among Us is that it is compiled using **il2cpp**. Which makes decompilation really annoying.
+4. Luckily, the Reactor Framework automatically handles all the hard parts for you.
 
 :::important
 
@@ -40,14 +36,8 @@ programming experience is heavily recommended.
   projects. It may also be referred to as just Reactor in general language.
 - **Reactor** (Reactor.dll) refers to the client side mod. It provides helper extensions
   and utility functions for other client mods.
-- **Reactor.OxygenFilter** is the program which translates obfuscated names to unobfuscated
-  names. It is used when internally and automatically when building a mod project to
-    - Convert from obfuscated ➔ deobfuscated
-      (so you can use human-friendly names in your code)
-    - Convert from deobfuscated ➔ obfuscated
-      (so the mod works in the obfuscated environment where the game is running)
-- **Reactor.OxygenFilter.MSBuild** is the actual code which plugs directly into the C# build
-  process, and invokes Reactor.OxygenFilter
+- **Reactor.MSBuild** plugs directly into the C# build and automatically downloads, unhollows and references Among Us
+  process.
 
 ---
 
@@ -61,4 +51,4 @@ programming experience is heavily recommended.
 
 ## Ready to start?
 
-### [Let's go ➔](/docs/basic/install_bepinex)
+### [Let's go ➔](/quick-start/install_bepinex)

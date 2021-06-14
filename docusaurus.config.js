@@ -17,18 +17,6 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs',
-          activeBasePath: 'docs/basic',
-          label: 'Getting Started',
-          position: 'left',
-        },
-        // {
-        //   to: 'docs/advanced',
-        //   activeBasePath: 'docs/advanced',
-        //   label: 'Advanced Docs',
-        //   position: 'left'
-        // },
-        {
           href: 'https://github.com/NuclearPowered',
           label: 'GitHub',
           position: 'right',
@@ -43,19 +31,15 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/',
-            },
-            // {
-            //   label: 'Advanced Docs',
-            //   to: 'docs/advanced/',
-            // },
+              to: '/',
+            }
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Dropship Online',
+              label: 'Website',
               href: 'https://reactor.gg',
             },
             {
@@ -67,16 +51,7 @@ module.exports = {
               href: 'https://github.com/NuclearPowered',
             },
           ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'About',
-              to: 'docs/',
-            },
-          ],
-        },
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} NuclearPowered`,
     },
@@ -86,7 +61,7 @@ module.exports = {
     image: 'img/logo.png',
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
-      additionalLanguages: ['csharp']
+      additionalLanguages: ['csharp', 'ini']
     }
   },
   presets: [
@@ -94,6 +69,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/NuclearPowered/Dropship.Website.Docs/blob/master',
         },
