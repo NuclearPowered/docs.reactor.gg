@@ -6,8 +6,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'favicon.ico',
-  organizationName: 'NuclearPowered', // Usually your GitHub org/user name.
-  projectName: 'Dropship.Website.Docs', // Usually your repo name.
+  organizationName: 'NuclearPowered',
+  projectName: 'docs.reactor.gg',
   themeConfig: {
     navbar: {
       title: 'Reactor',
@@ -71,7 +71,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/NuclearPowered/Dropship.Website.Docs/blob/master',
+          editUrl: 'https://github.com/NuclearPowered/docs.reactor.gg/blob/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
