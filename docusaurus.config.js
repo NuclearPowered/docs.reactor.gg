@@ -58,7 +58,7 @@ module.exports = {
     colorMode: {
       defaultMode: 'dark'
     },
-    image: 'img/logo.png',
+    image: 'img/logo_downscaled.png',
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
       additionalLanguages: ['csharp', 'ini']
