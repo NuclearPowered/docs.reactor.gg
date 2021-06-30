@@ -43,7 +43,39 @@ passed as the name to `dotnet new reactor -n` when you created the project.
 
 ### Inside the project file
 
-Reactor.MSBuild docs are WIP
+In the `.csproj` file, there are few important properties:
+  - `GamePlatform` defines game platform (`Steam`, `Itch`), defaults to `Steam`
+  - `GameVersion` defines which version of the game that the Reactor framework will download.
+  - `Description` should be a description of your mod.
+  - `Authors` should be the name of the author(s) of the mod.
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <DebugType>embedded</DebugType>
+
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionSuffix>dev</VersionSuffix>
+        <Description>Mod generated using Reactor.Template</Description>
+        <!-- <Authors>your name</Authors> -->
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GameVersion Condition="'$(GamePlatform)' == 'Steam'">2021.6.15s</GameVersion>
+        <GameVersion Condition="'$(GamePlatform)' == 'Itch'">2021.6.15i</GameVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Reactor" Version="1.0.0-rc.1" />
+        <PackageReference Include="Reactor.MSBuild" Version="0.1.5" PrivateAssets="all" />
+    </ItemGroup>
+
+    <Target Name="Copy" AfterTargets="Build" Condition="'$(AmongUs)' != ''">
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" Condition="'$(Configuration)' == 'Debug'" />
+    </Target>
+</Project>
+```
 
 ## Troubleshooting
 If you still have any errors, you should refresh your IDE, and IDE should do this

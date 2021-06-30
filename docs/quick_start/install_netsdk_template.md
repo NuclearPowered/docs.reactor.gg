@@ -1,5 +1,5 @@
 ---
-title: Install .NET SDK and Example template
+title: Install .NET SDK and the template
 ---
 
 
