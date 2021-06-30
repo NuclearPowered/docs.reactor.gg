@@ -23,4 +23,4 @@ wine configuration overrides, as explained in
 
 Explore the Among Us modding resources, covering everything from Harmony patching,
 to useful classes in Among Us. At the very least, you should look at the 
-[BepInEx guide](/bepinex_and_harmony/bepinex_guide), the [Harmony guide](/bepinex_and_harmony/harmony_guide), and the [Debugging Help](/bepinex_and_harmony/debugging).
+[BepInEx guide](/guides/bepinex_guide), the [Harmony guide](/guides/harmony_guide), and the [Debugging Help](/guides/debugging).

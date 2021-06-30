@@ -16,7 +16,7 @@ If you are using a lightweight editor without integrated C# build support,
 you can run the build from the console. Navigate to the directory that contains the `.sln` 
 file or the `.csproj` file. If you used the `dotnet new reactor` when scaffolding the project 
 (as this guide instructs), then 
-[this will be the folder](install_netsdk_example_template#download-the-example-mod-template).
+[this will be the folder](install_netsdk_template#download-the-example-mod-template).
 Once you are in this folder, run this command:
 ```shell
 dotnet build
