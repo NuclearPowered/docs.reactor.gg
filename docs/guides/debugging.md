@@ -1,5 +1,6 @@
 ---
 title: Debugging
+sidebar_position: 2
 ---
 
 ## Intro to debugging your mod

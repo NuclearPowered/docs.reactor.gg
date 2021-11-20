@@ -1,5 +1,6 @@
 ---
 title: Harmony Guide
+sidebar_position: 1
 ---
 
 ## Intro to Prefixes and Postfixes

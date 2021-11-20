@@ -1,5 +1,6 @@
 ---
 title: Install .NET SDK and the template
+sidebar_position: 2
 ---
 
 

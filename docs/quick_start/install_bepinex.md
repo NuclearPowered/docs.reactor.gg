@@ -1,5 +1,6 @@
 ---
 title: Install BepInEx
+sidebar_position: 0
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Install and configure C# IDE
+sidebar_position: 3
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Install Reactor
+sidebar_position: 1
 ---
 
 

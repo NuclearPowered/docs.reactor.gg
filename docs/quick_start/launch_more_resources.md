@@ -1,5 +1,6 @@
 ---
 title: Launching the mod and More Resources
+sidebar_position: 5
 ---
 
 

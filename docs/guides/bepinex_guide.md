@@ -1,5 +1,6 @@
 ---
 title: BepInEx Guide
+sidebar_position: 0
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Compile the Example mod
+sidebar_position: 4
 ---
 
 
