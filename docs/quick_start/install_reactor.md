@@ -20,7 +20,7 @@ Now that we have a mod downloaded, launch BepInEx to make sure that everything i
 You should see the **BepInEx version** and **Reactor version** in the top left, similar
 to this picture:
 
-![bepinex_test.png](/img/bepin_test.png)
+![reactor-test.png](/img/reactor-test.png)
 
 
 If this does not appear, follow the instructions in [Install BepInEx](quick_start/install_bepinex.md)

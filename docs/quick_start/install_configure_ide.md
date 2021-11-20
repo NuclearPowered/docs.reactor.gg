@@ -21,7 +21,7 @@ errors. They will disappear at the end of this section. There are a few steps to
   - In Rider, right click on the project and go under `Edit > Edit .csproj`. Note that the
     image below is a sample image, and some information, particularly the name of the
     project, will not match with our Example mod project.
-    
+
     ![open_csproj_rider](https://i.stack.imgur.com/uj5yP.png)
   - In Visual Studio Code, open up the `.csproj` file from the explorer view.
   - You can also navigate to the directory in which you cloned the git repository,
@@ -30,7 +30,7 @@ errors. They will disappear at the end of this section. There are a few steps to
 :::tip
 If you can't find the `.csproj` file, make sure you are in the right directory.
 The project is organized in a nested structure. Here is an example directory
-structure. Note that the exact name of the `.csproj` file depends on what you 
+structure. Note that the exact name of the `.csproj` file depends on what you
 passed as the name to `dotnet new reactor -n` when you created the project.
 ```
 .
@@ -51,30 +51,35 @@ In the `.csproj` file, there are few important properties:
   - `Authors` should be the name of the author(s) of the mod.
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
-        <LangVersion>latest</LangVersion>
-        <DebugType>embedded</DebugType>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <DebugType>embedded</DebugType>
 
-        <VersionPrefix>1.0.0</VersionPrefix>
-        <VersionSuffix>dev</VersionSuffix>
-        <Description>Mod generated using Reactor.Template</Description>
-        <!-- <Authors>your name</Authors> -->
-    </PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>dev</VersionSuffix>
+    <Description>Mod generated using Reactor Template</Description>
+    <!-- <Authors>your name</Authors> -->
+  </PropertyGroup>
 
-    <PropertyGroup>
-        <GameVersion Condition="'$(GamePlatform)' == 'Steam'">2021.6.15s</GameVersion>
-        <GameVersion Condition="'$(GamePlatform)' == 'Itch'">2021.6.15i</GameVersion>
-    </PropertyGroup>
+  <PropertyGroup>
+    <GamePlatform Condition="'$(GamePlatform)' == ''">Steam</GamePlatform>
+    <GameVersion Condition="'$(GamePlatform)' == 'Steam'">2021.6.30</GameVersion>
+    <GameVersion Condition="'$(GamePlatform)' == 'Itch'">2021.6.30</GameVersion>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Reactor" Version="1.0.0-rc.1" />
-        <PackageReference Include="Reactor.MSBuild" Version="0.1.5" PrivateAssets="all" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Reactor" Version="1.1.0" />
+    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-be.521" />
+    <PackageReference Include="AmongUs.GameLibs.$(GamePlatform)" Version="$(GameVersion)" PrivateAssets="all" />
 
-    <Target Name="Copy" AfterTargets="Build" Condition="'$(AmongUs)' != ''">
-        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(AmongUs)/BepInEx/plugins/" Condition="'$(Configuration)' == 'Debug'" />
-    </Target>
+    <PackageReference Include="BepInEx.AutoPlugin" Version="1.0.1" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="1.0.1" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Target Name="Copy" AfterTargets="Build" Condition="'$(AmongUs)' != ''">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(AmongUs)/BepInEx/plugins/" UseSymboliclinksIfPossible="true" />
+  </Target>
 </Project>
 ```
 

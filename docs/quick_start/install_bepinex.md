@@ -9,39 +9,25 @@ Installing BepInEx is first step in the [Overall Goals](/#overall-goals).
 
 ## How to download
 
-BepInEx is distributed as a zip file which contains the necessary bootstrapping code to
-mod the game. There are two ways to get the latest build.
-  - Download manually from [NuclearPowered/BepInEx/releases](https://github.com/NuclearPowered/BepInEx/releases).
-  - You can also install it through the Dropship launcher, which will automatically install and
-    upgrade to the latest version of BepInEx.
-    - The latest Dropship release can be
-      [downloaded here](https://github.com/NuclearPowered/Dropship/releases/latest).
+BepInEx is distributed as a zip file which contains the necessary bootstrapping code to mod the game.
+  - Download `BepInEx_UnityIL2CPP_x86_....zip` from [builds.bepis.io](https://builds.bepis.io/projects/bepinex_be).
 
 :::important
 
-This version of BepInEx is NuclearPowered's own custom fork. You should use this BepInEx for
-Among Us modding. If you have a version downloaded from
-[builds.bepis.io](https://builds.bepis.io) or any other place online, you should replace
-it with our version. Go to the
-[Updating or Migrating from a different version](#updating-or-migrating-from-a-different-version)
-section to do this.
+In the past a fork made by us was required, it is no longer the case! Make sure you are using the upstream version.
 
 :::
 
 
 ### Installing BepInEx
-If you downloaded it through Dropship, you can skip down to the
-[First Launch](#first-launch) section.
 
-If you downloaded the BepInEx zip manually, you should extract the contents of it into the root directory of
-your Among Us Folder. Here is a sample of how your Among Us Directory should look after extracting BepInEx.
+You should extract the contents of the zip into the root directory of your Among Us folder. Here is a sample of how your Among Us folder should look after extracting BepInEx.
 ```
 .
 ├── Among Us_Data
 ├── Among Us.exe
 ├── BepInEx
-│   ├── core/
-│   └── unity-libs/
+│   └── core/
 ├── doorstop_config.ini
 ├── GameAssembly.dll
 ├── mono
@@ -57,30 +43,10 @@ After extracting BepInEx to your Among Us folder, you should follow the instruct
 :::warning
 
 If you are on Linux, you should add `winhttp` to your wine configuration overrides, in the
-wine prefix that Among Us is installed in. For example with Steam, it will probably be
-`~/.steam/steam/steamapps/compatdata/945360/pfx`. If you don't do this, BepInEx **won't**
+wine prefix that Among Us is installed in. Follow [this](https://docs.bepinex.dev/master/articles/advanced/steam_interop.html#open-winecfg-for-the-target-game) guide if you are using Proton. If you don't do this, BepInEx **won't**
 work!
 
 :::
-
-
-## Updating or Migrating from a different version
-
-To update or migrate between versions of BepInEx, you can do the following steps:
-- Extract the new zip release.
-- Drag and drop those files into the Among Us directory, so that it **overwrites**
-  the old files.
-
-If you are migrating from a version of BepInEx that isn't NuclearPowered's own BepInEx,
-there are a few different steps to follow.
-- Delete the following files and directories:
-  - `BepInEx/cache`
-  - `BepInEx/core`
-  - `BepInEx/unhollowed`
-  - `changelog.txt`
-  - `mono/`
-  - `winhttp.dll`
-- Now install BepInEx again, following the [Install Instructions](#how-to-download).
 
 ## First Launch
 
