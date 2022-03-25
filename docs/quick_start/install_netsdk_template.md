@@ -80,8 +80,13 @@ is the directory structure after creating a project with the name `ModExperiment
 ```
 .
 └── ModExperiment
+    ├── .github
+        └── workflows
+            └── main.yml
     ├── ModExperiment
     │   ├── ModExperiment.csproj
     │   └── TemplatePlugin.cs
+    ├── build.cake
+    ├── nuget.config
     └── ModExperiment.sln
 ```
