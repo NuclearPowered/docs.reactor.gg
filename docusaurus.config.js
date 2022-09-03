@@ -11,6 +11,7 @@ const config = {
   favicon: 'favicon.ico',
   organizationName: 'NuclearPowered',
   projectName: 'docs.reactor.gg',
+  trailingSlash: false,
 
   presets: [
     [
