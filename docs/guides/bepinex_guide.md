@@ -9,9 +9,10 @@ sidebar_position: 0
 Here is an example BasePlugin class. Note how it does not (ab)use static variables everywhere, and calls `Harmony.PatchAll()` after it has been created with an `Id` defined by the `BepInAutoPlugin`.
 ```csharp
 using BepInEx;
-using BepInEx.IL2CPP;
+using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using Reactor;
+using Reactor.Utilities;
 
 namespace Example;
 

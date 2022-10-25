@@ -22,7 +22,7 @@ Once you are in this folder, run this command:
 dotnet build
 ```
 
-Now the output dll should be in `bin/Debug/netstandard2.1/ModExperiment.dll`, you can either copy it manually to your `BepInEx/plugins` folder or have it linked automatically by running this command:
+Now the output dll should be in `bin/Debug/net6.0/ModExperiment.dll`, you can either copy it manually to your `BepInEx/plugins` folder or have it linked automatically by running this command:
 
 ```shell
 dotnet build -p:AmongUs="/path/to/your/among/us"

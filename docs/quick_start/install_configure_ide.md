@@ -45,14 +45,13 @@ passed as the name to `dotnet new reactor -n` when you created the project.
 ### Inside the project file
 
 In the `.csproj` file, there are few important properties:
-  - `GamePlatform` defines game platform (`Steam`, `Itch`), defaults to `Steam`
   - `GameVersion` defines which version of the game that the Reactor framework will download.
   - `Description` should be a description of your mod.
   - `Authors` should be the name of the author(s) of the mod.
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <DebugType>embedded</DebugType>
 
@@ -69,12 +68,12 @@ In the `.csproj` file, there are few important properties:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Reactor" Version="1.1.0" />
-    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-be.521" />
-    <PackageReference Include="AmongUs.GameLibs.$(GamePlatform)" Version="$(GameVersion)" PrivateAssets="all" />
+    <PackageReference Include="Reactor" Version="2.0.0" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.662" Private="false" ExcludeAssets="runtime;native" />
+    <PackageReference Include="AmongUs.GameLibs.Steam" Version="2022.10.25" PrivateAssets="all" />
 
-    <PackageReference Include="BepInEx.AutoPlugin" Version="1.0.1" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="1.0.1" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.AutoPlugin" Version="1.1.0" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.0.1" PrivateAssets="all" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <Target Name="Copy" AfterTargets="Build" Condition="'$(AmongUs)' != ''">

@@ -10,13 +10,7 @@ Installing BepInEx is first step in the [Overall Goals](/#overall-goals).
 ## How to download
 
 BepInEx is distributed as a zip file which contains the necessary bootstrapping code to mod the game.
-  - Download `BepInEx_UnityIL2CPP_x86_....zip` from [builds.bepinex.dev](https://builds.bepinex.dev/projects/bepinex_be).
-
-:::important
-
-In the past a fork made by us was required, it is no longer the case! Make sure you are using the upstream version.
-
-:::
+  - Download `BepInEx-Unity.IL2CPP-win-x86-....zip` from [builds.bepinex.dev](https://builds.bepinex.dev/projects/bepinex_be).
 
 
 ### Installing BepInEx
@@ -30,9 +24,7 @@ You should extract the contents of the zip into the root directory of your Among
 │   └── core/
 ├── doorstop_config.ini
 ├── GameAssembly.dll
-├── mono
-│   ├── Managed/
-│   └── MonoBleedingEdge/
+├── dotnet/
 ├── UnityCrashHandler32.exe
 ├── UnityPlayer.dll
 └── winhttp.dll
@@ -57,7 +49,7 @@ on future launches.
 
 After you run the game once, you will see the directory structure change. Particularily,
 the BepInEx folder will become populated with the `cache/`, `config/`, `patchers/`, and
-`plugins/` folder. The `unhollwed/` folder will also fill up with a lot more `.dll` files.
+`plugins/` folder. The `interop/` folder will also fill up with a lot more `.dll` files.
 This is completely normal, and was the result of the dumping BepInEx did on first launch.
 Below is a example directory structure after launching BepInEx for the first time.
 ```
@@ -70,13 +62,11 @@ Below is a example directory structure after launching BepInEx for the first tim
 │   ├── core/
 │   ├── patchers/
 │   ├── plugins/
-│   ├── unhollowed/
+│   ├── interop/
 │   └── unity-libs/
 ├── doorstop_config.ini
 ├── GameAssembly.dll
-├── mono
-│   ├── Managed/
-│   └── MonoBleedingEdge/
+├── dotnet/
 ├── UnityCrashHandler32.exe
 ├── UnityPlayer.dll
 └── winhttp.dll
